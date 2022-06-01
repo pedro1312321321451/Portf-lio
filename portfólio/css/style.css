@@ -1,0 +1,154 @@
+*{
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    overflow: hidden;
+    font-family: 'Bebas Neue', cursive;
+    background: url(img/fotis1.jpg) no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.logo {
+    font-style: italic;
+    font-weight: 100;
+    font-size: 26px;
+    font-family: 'Bebas Neue';
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    opacity: 1;
+}
+.nav-list a{
+    font-style: italic;
+    font-size: 20px;
+    font-weight: 100;
+    font-family: 'Bebas Neue', cursive;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    opacity: 1;
+}
+
+nav {  
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family:sans-serif;
+    background: rgba(39, 39, 39, 0.800);
+    border-radius: 0px;
+    box-shadow: 0 4px 30px rgba(55, 27, 88, 0);
+    backdrop-filter: blur(16.1px);
+    -webkit-backdrop-filter: blur(16.1px);
+    height: 10vh;
+}
+
+nav cite {
+    color: rgb(157, 92, 255);
+}
+.nav-list {
+    list-style: none;
+    display:flex;
+
+}
+
+.nav-list li {
+    
+    letter-spacing: 2px;
+    margin-left: 32px;
+}
+
+.nav-list li a {
+    transition: 0.2s;
+    
+}
+
+.nav-list li a:hover {
+    color: rgb(157, 92, 255);
+    font-size:22px;
+}
+
+@media (max-width: 1024px) {
+    .nav-list {
+        display: flex;
+        position:absolute;
+        top: 10vh;
+        right:0px;
+        width: 50vh;
+        height: 90vh;
+        /* From https://css.glass */
+        background: rgba(130, 130, 130, 0.09);
+        border-radius: 0px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(6px);
+        -webkit-backdrop-filter: blur(6px);
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%); 
+    }
+
+    
+.nav-list li {
+    margin-left: 0px;
+    opacity: 0;
+}
+}
+
+h1 {
+    text-shadow: 0 0 3px rgb(36, 36, 36);
+    font-style: italic;
+    color: rgb(157, 92, 255);
+    font-size: 50px;
+    margin: 100px 100px;
+}
+
+cite{
+    
+    color: aliceblue;
+}
+
+footer {
+    
+    margin: -100px 1230px 0px;
+}
+footer img {
+    background: rgb(157, 70, 255,1.02);
+    border-radius: 30px;
+    display: flex;
+    margin: 40px;
+    height: 50px;
+    transition: 0.6s;
+    
+}
+
+footer img:hover {
+    background: rgb(207, 70, 255,0.00);
+    height: 60px;  
+}
+
+h2 {
+    font-style: italic;
+    position: absolute;
+    margin: -100px 120px ;
+}
+
+h2 {
+    text-shadow: 0 0 3px rgb(36, 36, 36);
+    font-style: italic;
+    color: rgb(157, 92, 255);
+    font-size: 30px;
+    margin: -100px 100px;
+}
+
+img {
+    position: inherit;
+    margin: 0px 0px;
+}
+
+#img1 {
+    margin: -60px 100px;
+}
