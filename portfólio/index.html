@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,37 +8,40 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> 
-    <script src="script.js"></script>
+    <script src="/portfólio/js/script.js"></script>
+    <script src="https://kit.fontawesome.com/7e0e421bac.js" crossorigin="anonymous"></script>
     <title>Portfólio</title>
 </head>
 <body>
     <header>
         <nav>
         <a class="logo"><cite>Web</cite> developer</a>           
-            <ul class="nav-list">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Projetos</a></li>
-                <li><a href="#">Contato</a></li>
-                <li><a href="#">Sobre</a></li> 
+        
+        <ul class="nav-list">
+                <li><a class="menuItem" href="#">Home</a></li>
+                <li><a class="menuItem" href="#">Projetos</a></li>
+                <li><a class="menuItem" href="#">Contato</a></li>
+                <li><a class="menuItem" href="#">Sobre</a></li> 
             </ul>
+            <button class="hamburger" onclick="toggleMenu()">
+                <i class="menuIcon fa-solid fa-bars fa-2x"></i>
+                <i class="closeIcon fa-solid fa-xmark fa-2x"></i>
+            </button>
         </nav>
     </header> 
     <section>
         <h1>Pedro <cite>Henrique</cite></h1>
         <h2> Front-End <cite>Web</cite></h2>  
         <div id="img1">
-            <img src="/css/img/icons8-javascript-48.png">
-            <img src="/css/img/icons8-html-5-48.png">
-            <img src="/css/img/icons8-css3-48.png">  
+            <img src="/portfólio/assets/img/icons8-javascript-48.png">
+            <img src="/portfólio/assets/img/icons8-html-5-48.png">
+            <img src="/portfólio/assets/img/icons8-css3-48.png">  
+        </div>
+        <div class="wrapper">
+         <a href="https://www.linkedin.com/in/pedro-henrique-8076aa23a/"><img src="/portfólio/assets/img/icons8-linkedin-circundado-50.png"></a>
+         <a href="https://github.com/pedro1312321321451"><img src="/portfólio/assets/img/icons8-github-64.png"></a>
         </div>
     </section>  
-    <main>
-        <footer>
-            <a href="https://www.linkedin.com/in/pedro-henrique-8076aa23a/"><img src="/css/img/icons8-linkedin-circundado-50.png"></a>
-            <a href="https://github.com/pedro1312321321451"><img src="/css/img/icons8-github-64.png"></a>
-        </footer>
 
-    </main>
-  
 </body>
 </html>

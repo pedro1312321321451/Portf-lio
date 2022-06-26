@@ -7,7 +7,7 @@
 body {
     overflow: hidden;
     font-family: 'Bebas Neue', cursive;
-    background: url(img/fotis1.jpg) no-repeat center center;
+    background: url(/portfólio/assets/img/fotis1.jpg) no-repeat center center;
     background-size: cover;
     height: 100vh;
 }
@@ -21,7 +21,7 @@ body {
     color: rgb(255, 255, 255);
     opacity: 1;
 }
-.nav-list a{
+.nav-list a {
     font-style: italic;
     font-size: 20px;
     font-weight: 100;
@@ -71,33 +71,6 @@ nav cite {
     font-size:22px;
 }
 
-@media (max-width: 1024px) {
-    .nav-list {
-        display: flex;
-        position:absolute;
-        top: 10vh;
-        right:0px;
-        width: 50vh;
-        height: 90vh;
-        /* From https://css.glass */
-        background: rgba(130, 130, 130, 0.09);
-        border-radius: 0px;
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(6px);
-        -webkit-backdrop-filter: blur(6px);
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        transform: translateX(100%); 
-    }
-
-    
-.nav-list li {
-    margin-left: 0px;
-    opacity: 0;
-}
-}
-
 h1 {
     text-shadow: 0 0 3px rgb(36, 36, 36);
     font-style: italic;
@@ -111,11 +84,11 @@ cite{
     color: aliceblue;
 }
 
-footer {
+.wrapper {
     
     margin: -100px 1230px 0px;
 }
-footer img {
+.wrapper img {
     background: rgb(157, 70, 255,1.02);
     border-radius: 30px;
     display: flex;
@@ -125,7 +98,7 @@ footer img {
     
 }
 
-footer img:hover {
+.wrapper img:hover {
     background: rgb(207, 70, 255,0.00);
     height: 60px;  
 }
@@ -150,5 +123,89 @@ img {
 }
 
 #img1 {
-    margin: -60px 100px;
+  margin: -60px 100px;
+}
+
+
+.hamburger {
+    position: fixed;
+    color: rebeccapurple;
+    background: none;
+    cursor: pointer;
+    padding: 4px;
+    z-index: 100;
+    
+}
+
+.closeIcon {
+    display: none;
+}
+
+.nav-list {
+    position: fixed;
+    transform: translateY(100%);
+    transition: transform 0.2s;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    background: black;
+    color: white;
+    list-style: none;
+    padding-top: 4rem;
+
+}
+
+.open {
+    transform: translateY(0);
+}
+
+
+@media (max-width: 600px) {
+   .nav-list a{
+    display: block;
+   }
+
+   .hamburger {
+    margin-left: 30rem;
+    display: block;
+   }
+
+   .wrapper {
+    margin: 0 3rem 0;
+   }
+   .nav-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    transform: translatex(100%);
+    transition: transform 0.2s;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    background: rgba(39, 39, 39, 0.989);
+    border-radius: 0px;
+    box-shadow: 0 4px 30px rgba(55, 27, 88, 0);
+    backdrop-filter: blur(16.1px);
+    -webkit-backdrop-filter: blur(16.1px);
+    color: white;
+    list-style: none;
+    padding-top: 4rem;
+
+}
+
+.nav-list li{
+    margin-top: 1rem;
+}
+
+.open {
+    transform: translateY(0);
+}
+
+
 }
