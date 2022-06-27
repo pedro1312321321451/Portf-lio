@@ -13,6 +13,7 @@ body {
 }
 
 .logo {
+    margin-right: 28rem;
     font-style: italic;
     font-weight: 100;
     font-size: 26px;
@@ -55,8 +56,7 @@ nav cite {
 
 }
 
-.nav-list li {
-    
+.nav-list li { 
     letter-spacing: 2px;
     margin-left: 32px;
 }
@@ -85,7 +85,6 @@ cite{
 }
 
 .wrapper {
-    
     margin: -100px 1230px 0px;
 }
 .wrapper img {
@@ -95,7 +94,6 @@ cite{
     margin: 40px;
     height: 50px;
     transition: 0.6s;
-    
 }
 
 .wrapper img:hover {
@@ -122,39 +120,25 @@ img {
     margin: 0px 0px;
 }
 
-#img1 {
+.icons {
   margin: -60px 100px;
 }
 
 
 .hamburger {
+    display: none;
     position: fixed;
     color: rebeccapurple;
     background: none;
     cursor: pointer;
     padding: 4px;
-    z-index: 100;
-    
+    z-index: 100; 
 }
-
-.closeIcon {
+.menuIcon {
+    display: block;
+}
+.hamburger .closeIcon{
     display: none;
-}
-
-.nav-list {
-    position: fixed;
-    transform: translateY(100%);
-    transition: transform 0.2s;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 99;
-    background: black;
-    color: white;
-    list-style: none;
-    padding-top: 4rem;
-
 }
 
 .open {
