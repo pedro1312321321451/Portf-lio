@@ -85,7 +85,8 @@ cite{
 }
 
 .wrapper {
-    margin: -100px 1230px 0px;
+    position: absolute;
+    margin: -53rem 75rem 1220px;
 }
 .wrapper img {
     background: rgb(157, 70, 255,1.02);
@@ -120,15 +121,19 @@ img {
     margin: 0px 0px;
 }
 
-.icons {
-  margin: -60px 100px;
+.icons img {   
+    position: relative;
+   
 }
 
+.icons {
+    margin: 22rem 10px;
+}
 
 .hamburger {
     display: none;
     position: fixed;
-    color: rebeccapurple;
+    color: rgb(157, 92, 255);
     background: none;
     cursor: pointer;
     padding: 4px;
@@ -157,7 +162,7 @@ img {
    }
 
    .wrapper {
-    margin: 0 3rem 0;
+    margin: -55rem 29rem 0;
    }
    .nav-list {
     display: flex;
@@ -175,21 +180,38 @@ img {
     background: rgba(39, 39, 39, 0.989);
     border-radius: 0px;
     box-shadow: 0 4px 30px rgba(55, 27, 88, 0);
-    backdrop-filter: blur(16.1px);
-    -webkit-backdrop-filter: blur(16.1px);
+    backdrop-filter: blur(10.1px);
+    -webkit-backdrop-filter: blur(10.1px);
     color: white;
     list-style: none;
-    padding-top: 4rem;
-
+    padding-top: 1rem;
 }
 
-.nav-list li{
+    .nav-list li{
     margin-top: 1rem;
 }
 
-.open {
+    .open {
     transform: translateY(0);
 }
-
-
+    .wrapper {
+    position: absolute;
+            
+    }
+    .icons {
+    position: relative;
+    margin: 23rem 1rem;
+    }
+    .logo {
+        position: inherit;
+        margin-right: 23rem;
+    }
+    h1{
+        position: relative;
+        margin: 5rem 1rem 0;
+    }
+    h2 {
+        position: absolute;
+        margin: -1rem 1rem 0;
+    }
 }
